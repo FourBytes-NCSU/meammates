@@ -1,0 +1,33 @@
+.login-container {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.login-btn {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.chef {
+  background-color: #ff6347;
+  color: white;
+}
+
+.food {
+  background-color: #4caf50;
+  color: white;
+}
+
+.profile-label {
+  background: bisque;
+  border-radius: 20px;
+  padding: 22px;
+  font-size: 38px;
+  font-weight: 200;
+}
