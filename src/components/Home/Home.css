@@ -34,7 +34,7 @@
   line-height: 62px;
   text-align: center;
   letter-spacing: 0.2px;
-  color: #fff;
+  color: #fff !important;
   margin: 10px;
 }
 

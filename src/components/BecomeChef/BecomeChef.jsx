@@ -5,7 +5,7 @@ import foodBecome from "./../../assets/foodbecome.png";
 import { useAuth } from "../../context/AuthContext";
 
 const BecomeChef = () => {
-  const { user, providedFood } = useAuth();
+  const { user, saveProvidedFood } = useAuth();
   const [foodData, setFoodData] = useState({
     food_description: "",
     food_quantity: "",
@@ -64,7 +64,7 @@ const BecomeChef = () => {
       alert("Food data submitted successfully!");
 
       // Save the food data provided by the chef in the context
-      providedFood(foodData);
+      saveProvidedFood(foodData);
     } catch (error) {
       console.error("Error submitting food data:", error);
 
@@ -77,8 +77,6 @@ const BecomeChef = () => {
       } else {
         console.error("Request setup error:", error.message);
       }
-
-      alert("Failed to submit food data. Check console for details.");
     }
   };
 

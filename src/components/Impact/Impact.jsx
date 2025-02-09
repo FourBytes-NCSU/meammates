@@ -33,8 +33,8 @@ const Impact = () => {
             x: new Date(d[xKey]).getTime(), // Convert date to timestamp for x-axis
             y: d[yKey], // Meals saved
           })),
-          backgroundColor: "#ffaa00", // Set the background color
-          borderColor: "#f27059", // Set the border color
+          backgroundColor: "#f9dc5c", // Set the background color
+          borderColor: "#ffaa00", // Set the border color
           borderWidth: 1,
           fill: false,
         },

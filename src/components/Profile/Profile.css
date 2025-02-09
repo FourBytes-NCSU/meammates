@@ -1,41 +1,107 @@
 .profile-container {
+  background: linear-gradient(39.97deg, #f9dc5c 0.79%, #ffaa00 79.29%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10%;
+  min-height: 100vh;
+  box-sizing: border-box;
   text-align: center;
-  margin: 50px;
 }
 
-.profile-avatar {
-  width: 100px;
-  height: 100px;
+.mealphoto {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.logout-btn {
-  background-color: red;
-  color: white;
-  padding: 10px 20px;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 30px;
+.header-texte {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.logout-btn:hover {
-  background-color: darkred;
+.header-texte h1 {
+  font-family: Poppins, sans-serif;
+  font-weight: 900;
+  font-size: 2.5em;
+  line-height: 1.2;
+  color: #ffaa00;
+  margin: 10px;
+}
+
+.header-texte h4 {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #ffaa00;
+  margin: 10px;
+}
+
+.header-tilee {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  transition: all 0.3s;
+  text-align: center;
+  max-width: 80%;
+  color: #ffaa00;
+  margin-bottom: 20px;
 }
 
 .profile-label {
-  background: bisque;
+  background: #fff;
   border-radius: 20px;
-  padding: 22px;
-  font-size: 38px;
-  font-weight: 200;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: 600;
   box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024,
     0 3px 14px 2px #0000001f;
+  display: inline-block;
+  color: #ffaa00;
 }
 
 .foot-stats {
-  font-size: 30px;
+  font-size: 26px;
+  font-weight: bold;
   margin-bottom: 15px;
+  color: #ffaa00;
+}
+
+.logout-btn {
+  background-color: #fff;
+  color: #ffaa00;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 39px;
+  margin-top: 30px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 1px 10px 32px rgba(0, 0, 0, 0.15);
+}
+
+.logout-btn:hover {
+  box-shadow: 1px 10px 32px rgba(0, 0, 0, 0.45);
+}
+
+@media only screen and (max-width: 640px) {
+  .mealphoto {
+    width: 120px;
+    height: 120px;
+  }
+
+  .header-tile {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .logout-btn {
+    padding: 10px 20px;
+  }
 }
